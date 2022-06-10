@@ -1,0 +1,1106 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Open Sans';
+}
+.navbar-nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.nav-link{
+    color: #1d191a;
+}
+.logo{
+    height: 100px;
+    border-radius: 50%;
+}
+.container-header ul{
+    list-style: none;
+    display: flex;
+    
+}
+
+.container-header li{
+    margin: 15px 40px;
+    font-family:  'Open Sans', sans-serif;
+    font-size:15px;
+    font-weight: bold; 
+    
+}
+.container-header a{
+    text-decoration: none;
+}
+
+.container-body{
+    display: grid;
+}
+.open {
+    display: flex;
+    position: relative;
+    margin-bottom: 6.5rem;
+}
+.left-1{
+   text-align: left;
+   width: 700px;
+   margin: 10px 30px;
+}
+.left-1 > span {
+     font-family: 'Ubuntu', sans-serif;
+     font-weight: bold;
+     font-size: 70px;
+     position: relative;
+}
+.dining{
+    position: relative;
+}
+@keyframes dining0 {
+    0%{left: -400px;}
+    100%{left: 0px;}
+}
+.left-1  > span > b{
+    color: #d10a11;
+}
+.left-1 > p{
+     font-family: 'Open Sans', sans-serif;
+     font-size:20px;
+     font-weight: 500;
+}
+
+.view-menu{
+    color: white;
+    background-color: #d10a11;
+    border: none;
+    border-radius: 30px;
+    font-size: 25px;
+    padding: 10px 50px;
+}
+
+.right-1{
+    position: relative;   
+}
+.circle--3{
+    position: absolute;
+    left: 100px;
+
+}
+@keyframes cirThree{
+     0%{left: 500px;}
+     100%{left: 100px;}
+     
+}
+ @keyframes circle0 {
+    0% {right: -250px}
+    100%{right:150px}
+ } 
+.circle--3{
+    width: 400px;
+}
+
+.chef{
+    width: 370px;
+    position: absolute;
+    z-index: 5;
+    border-radius: 50%;
+    top: 50px;
+    left:30px;
+
+
+}
+@keyframes chef{
+    0%{top:-500px}
+    100%{top : 50px}
+}
+.img-food{
+    display: flex;
+    position: relative;
+    width: 90vw;
+    height: 280px;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.img-wrapper {
+    display: inline-block;
+    overflow: hidden;
+ }
+ .img-wrapper img{
+     width: 250px;
+     height: 250px;
+     object-fit: cover;
+     cursor: pointer;
+ }
+ .img-wrapper > img:hover{
+     transition: all 0.3s ease-in;
+     transform: scale(1.1);
+ }
+.page2{
+    display: grid;
+}
+.animation{
+    background-color: #d5d7db;
+    position: relative;
+    height: 800px;
+    overflow: hidden;
+}
+.circle-page2{
+    width: 200px;
+    border-radius: 50%;
+    z-index: 0;
+    position:absolute ;
+    top: 50px;
+    right:150px;
+   
+}
+.circle-page2.animate{
+     animation-name:circle0;
+     animation-duration: 3s;
+}
+
+@keyframes circle0 {
+    0% {right: -250px}
+    100%{right:150px}
+}
+.focaccia{
+    width: 450px;
+    z-index: 1;
+    position: absolute;
+    right: 250px;
+    bottom: 150px;
+}
+.focaccia.animate{
+    animation-name:focaccia0;
+    animation-duration: 3s;
+}
+@keyframes focaccia0{
+    0%{bottom:-300px ;}
+    100%{bottom: 150px;}
+
+}
+.breakfast{
+    background-color: white;
+    width: 350px;
+    height: 450px;
+    z-index: 2;
+    position: absolute;
+    display: block;
+    padding: 30px;
+    font-family: 'Open Sans', 'sans serif';
+    top: 300px;
+    left:270px;
+}
+.breakfast.animate{
+    animation-name:breakfast0;
+    animation-duration: 3s;
+}
+@keyframes breakfast0{
+    0%{left: -400px;}
+    100%{left:270px ;}
+}
+.breakfast > h2{
+    font-size: 36px;
+}
+.breakfast > p{
+    font-size: 20px;
+}
+.page2-part2{
+    background-color:#1d191a ;
+    height: 1143px;
+}
+
+.ham{
+    width: 100vw;
+}
+.page2-part2{
+    height: auto;
+    padding-bottom:2rem ;
+}
+.menu{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+    margin: auto;
+    /* height: 650px; */
+    height: auto;
+    width: 90vw;
+}
+.menu0{
+    background-color: #2e2e2e;
+    color: #fbffff;
+    padding: 20px;
+    position: relative;
+}
+.list{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.cir-num{
+  position: relative;
+   width: 60px;
+   height: 60px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #d10a11;
+   border-radius: 50%;
+   font-size: 25px;
+}
+
+.cir-num.moving {
+    animation: cirNum 5s;
+}
+.circle-menu {
+    position: relative;
+    width: 70px;
+    border-radius: 50%;
+}
+.list h2{
+    margin-top: 1rem;
+}
+
+@keyframes dish{
+   0%{right:-100px}
+   100%{right:0px}
+}
+.menu0 > p{
+    line-height: 1.5;
+    font-size: 18px;
+    font-weight: 100;
+}
+.page3{
+    height: 1200px;
+    background-color: #d5d7db;
+    position: relative;
+}
+.smallCir{
+    width: 120px;
+    border-radius: 50%;
+    position: absolute;
+    top:50px;
+    right: 75px; 
+}
+.smallCir.move{
+  animation: smCir 3s ;
+}
+@keyframes smCir{
+    0%{ top: -150px; }
+    100%{top: 50px; }
+}
+.rectangle{
+    width: 1190px;
+    height: 590px;
+    position: absolute;
+    right: 0px;
+    top: 450px;
+}
+.rectangle.move{
+    animation: rec 3s ;
+}
+@keyframes rec{
+    0%{top: 600px;}
+    100%{top: 450px;}
+}
+.insalata{
+    width: 855px;
+    height: auto;
+    position: absolute;
+    top: 220px;
+    left: 150px;
+}
+.insalata.move{
+    animation: salad 3s;
+}
+@keyframes salad{
+    0%{left: -50px;}
+    100%{left: 150px;}
+}
+.delivery{
+    width: 552px;
+    height: 484px;
+    background-color: #fbffff;
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding: 20px;
+    bottom: 50px;
+    right: 70px;
+  
+}
+.delivery.move{
+    animation: deliv;
+}
+@keyframes deliv{
+    0%{bottom: -150px;}
+    100%{bottom: 50px ;}
+}
+.delivery > h2{
+    line-height: 150%;
+    font-size: 40px;
+}
+.delivery > p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 2;
+    margin-bottom: 50px;
+}
+.page4{
+    background: url(./images/fastfood.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 674px;
+    color: white;
+    position: relative;
+    width: 100vw;
+   
+}
+.must--text{
+    position: absolute;
+    top: 200px;
+    left: 30px;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 25px;
+    letter-spacing: 3px;
+
+}
+.fast--text{
+    position: absolute;
+    top: 250px;
+    left: 30px;
+    font-weight: 700;
+    font-size: 80px;
+}
+.page4 .menu--page4{
+    position: absolute;
+   top: 450px;
+   left: 30px;
+}
+.page5{
+    padding: 10px 30px;
+    text-align: center;
+    height: auto;
+
+}
+.container{
+    position: relative;
+}
+.grid-menu{
+   width: 940px; 
+   /* height: auto; */
+   display: grid;
+   grid-template-columns: auto auto;
+   gap: 20px; 
+   margin: 0 auto;
+}
+.grid-menu > .container> img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.opacity{
+    background: rgba(0, 0, 0, 0.5);
+    width: 280px;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+} 
+
+.dish{
+    color: white;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 24px;
+    margin:50px auto 15px;
+
+} 
+.price{
+    color: #d10a11;
+    margin: 20px 30px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 20px;
+}
+.btn{
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 12px;
+    padding: 7px 25px;
+}
+.tacos{
+   
+        display: block;
+        
+        width: 100%;
+        height: 709px;
+   
+}
+.page6{
+    position: relative;
+    background:url(./images/tacos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    height: 900px;
+    margin: 2rem auto;
+}
+
+.lala{
+    position: absolute;
+    height: 550px ;
+    width: 470px;
+    top: 0px;
+    left: 50px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    transform: translateY(30%);
+    padding: 3rem;
+    
+}
+.dishName{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 24px;
+
+}
+.des{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 17px;
+    /* margin: 50px 50px 20px; */
+}
+.d-block{
+    height: auto;
+    /* padding-bottom: 5rem;
+    background-color: #8f2d2d; */
+    top: 0px;
+}
+.borderBtn{
+    border-color: #d10a11;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 9px 30px;
+    font-size: 14px;
+    margin-top: 100px;
+    margin-bottom: 1rem;
+}
+.carousel-inner{
+    top: 100px;
+}
+.page7{
+    background-color: #111111;
+    position: relative;
+    height: 800px;
+    margin-top: 2rem;
+}
+.redstick{
+    width: 225px;
+    height: 674px;
+    background-color: #d10a11;
+    border: none;
+    position: absolute;
+    left: 300px;
+    z-index: 1;
+}
+.last--grid{
+    background-color: "transparent";
+    color: white;
+    z-index: 2;
+    width: 100vw;
+    height: 554px;
+    margin: 80px 40px;
+    position: absolute;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;    
+}
+.item1{
+    grid-row: 1/3;
+}
+.item1 > img{
+    width: 420px;
+}
+.item2{
+    grid-column: 2/4;
+    text-align: center;
+}
+.item2 >h2{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 36px;
+}
+.item2 >h6{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 60px;
+}
+.item2 > form{
+ 
+}
+.item2 > form > button{
+    border: none;
+    background-color: #d10a11;
+    color: #fff;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 18px;
+    padding: 10px 30px;
+}
+.item2 >form >input{
+    background-color: #111111;
+    border: none;
+    border-bottom: 2px solid #fff;
+    height: 45px;
+    color: #fff;
+}
+.item3{
+    grid-column: 2/4;
+}
+.sm-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    justify-content: space-between;
+}
+.item3-1 >h2{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 1.5px;
+}
+.item3-1 >p{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 18px;
+}
+.item3-2 >h2{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 1.5px;
+}
+.icon{
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto 50px ;
+}
+.item3-2 >p{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 18px;
+}
+
+@media screen and (max-width:556px){
+    .nav{
+        width: 100vw;
+    }
+    .logo{
+        width: 20vw;
+        height: auto;
+        display: flex;
+        align-items: center;
+    }
+    .container-header{
+        width: 150px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .open{
+        flex-direction: column;
+    }
+    
+    .left-1 span{
+        font-size: 25px;
+    }
+    .left-1 p{
+        font-size: 12px;
+        width: 80vw;
+    }
+    .view-menu{
+            border: none;
+            border-radius: 30px;
+            font-size: 15px;
+            padding: 5px 10px;  
+    }
+    .circle--3 {
+        width: 200px;
+        left: 100px;
+    }
+    @keyframes cirThree{
+        0%{left: 500px;}
+        100%{left: 100pxpx;}
+        
+   }
+    .chef{
+        width: 200px;
+        margin: 0 auto;
+        left: 70px;
+        top: 30px;
+    }
+    @keyframes chef{
+        0%{top:-500px}
+        100%{top : 30px}
+    }
+    .container-body{
+        width: 100vw;
+        left: 0;
+    }
+    .img-food{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: auto;
+        justify-content: space-around;
+        top: 150px;
+              margin: 0;
+              margin-bottom: 10rem;
+              text-align: center;
+    }
+    .img-food img{
+        width: 250px;
+        height: 250px;
+       
+        margin: 0 auto;
+   margin-bottom: 3rem;
+    }
+    .animation{
+        width: 100vw;
+    }
+    .circle-page2{
+        width: 90px;
+        left: 200px;
+        top: 90px;
+    }
+    @keyframes circle0 {
+        0% {left: -250px}
+        100%{left:200px}
+    }
+    .focaccia{
+        width: 250px;
+        left: 120px;
+        top: 150px;
+    }
+    @keyframes focaccia0{
+        0%{top:-300px ;}
+        100%{top: 150px;}
+    
+    }
+    .breakfast{
+        width: 250px;
+        height: 350px;
+        top: 200px;
+        left:20px;
+        animation-name:breakfast0 ;
+        animation-duration: 3s; 
+    }
+    .breakfast p{
+        font-size: 15px;
+    }
+    @keyframes breakfast0{
+        0%{left: -400px;}
+        100%{left:20px ;}
+    }
+    
+    .menu{
+        grid-template-columns: auto;
+    }
+    .menu0{
+        width: 80vw;
+        margin: 0 auto;
+    }
+    .page3{
+        height: 600px;
+        margin: 2rem auto;
+    }
+    .rectangle{
+        width: 300px;
+        top: 180px;
+        left: 10px;
+        height: 250px;
+    }
+    .insalata{
+        width: 250px;
+        left: 90px;
+        top: 150px;
+    }
+    .delivery{
+        top: 250px;
+        width: 270px;
+        height: 330px;
+    }
+    .delivery h2{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .delivery p{
+        font-size: 12px;
+    }
+    .page4{
+     margin: 2rem 0;
+     height: 200px;
+    }
+    .must--text, .fast--text,.page4 .menu--page4{
+        position: absolute;
+        top: 0;
+    }
+    .must--text{
+        top: 50px;
+        font-size: 12px;
+    }
+    .fast--text{
+        top: 60px;
+        font-size: 42px;
+    }
+    .page4 .menu--page4{
+        top: 140px;
+    }
+    .grid-menu{
+        grid-template-columns: 90vw;
+        margin: 0 auto;
+    }
+    .opacity{
+        width: 180px;
+        height: 140px;
+    }
+    .opacity h4, h6{
+        font-size: 13px;
+        padding: 0;
+        margin: 0;
+    }
+    .btn{
+        width: 100px;
+        font-size: 12px;
+        margin: 0 auto;
+    }
+    
+    .lala{
+        position: absolute;
+        height: 80% ;
+        width: 80%;
+        text-align: center;
+        transform: translateY(10%);
+margin-right: 2rem;        
+    }
+    .d-block{
+        padding: 2rem;
+        margin-bottom: 2rem;
+        top: 10px;
+        height: 100%;
+        
+    }
+    .d-block p{
+        font-size: 12px;
+        margin-top: 2rem;
+        
+    }
+    .page7{
+        margin-top: 1rem;
+        height: 1000px;
+        text-align: center;
+    }
+    .redstick{
+        width: 100vw;
+        height: 90px;
+        top: 100px;
+        left: 0px;
+    }
+    .last--grid{
+        display: flex;       
+        flex-direction: column;
+        position: relative;
+        width: auto;
+        margin: 0 auto;
+    }
+    .item1{
+        position: relative;
+         top: 10px;
+        margin: 0 auto;
+        text-align: center;
+        background-color: #d10a11;
+    }
+    .item1{
+        width: 250px; 
+    }
+    .item2{
+        width: 90vw;
+        margin: 0 auto; 
+    }
+    .icon{
+        width: 200px;
+    }
+    
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){
+    
+    .left-1 span{
+        font-size: 55px;
+        color: #111111;
+    }
+    .left-1{
+        width: 60vw;
+    }
+    .circle--3{
+        width: 300px;
+        left: -50px;
+    }
+    .chef{
+        width: 200px;
+    }
+    @keyframes cirThree{
+        0%{left: 500px;}
+        100%{left: -50px;}
+        
+   }
+   .cir-num{
+       width: 60px;
+       height: 60px;
+   }
+   .list h2{
+    font-size: 18px;
+    margin-left: 1rem;
+   }
+   .menu0 p{
+       font-size: 15px;
+   }
+   .img-wrapper img{
+       width: 200px;
+       height: 200px;
+   }
+   .page3{
+      height: 800px; 
+   }
+   .insalata{
+       width: 500px;
+       top: 100px;
+   }
+   .rectangle{
+       width: 500px;
+       height: 400px;
+       top: 180px;
+       left: 20px;
+   }
+   .delivery{
+       top: 250px;
+       width: 450px;
+   }
+   .page4{
+       height: 500px;
+   }
+   .must--text{
+       top: 40px;
+   }
+   .fast--text{
+       top: 90px;
+   }
+   .page4 .menu--page4{
+       top: 250px;
+   }
+   .grid-menu{
+       grid-template-columns: 90vw;
+   }
+   .opacity{
+       width: 350px;
+   }
+
+   .page7{
+    background-color: rgb(13, 14, 14);
+    display: flex;
+    color: rgb(28, 191, 137);
+    flex-direction: column;
+     text-align: center;
+  
+}
+
+.lala{
+    width: 450px;
+    transform: translateY(10%);
+}
+.item1{
+    width: 550px;
+}
+.redstick{
+    width: 100vw;
+    height: 90px;
+    top: 100px;
+    left: 0px;
+}
+.last--grid{
+    display: flex;       
+    flex-direction: column;
+    position: relative;
+    width: auto;
+    margin: 0 auto;
+}
+.item1{
+    position: relative;
+     top: 10px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #d10a11;
+}
+.item1{
+    width: 250px; 
+}
+.item2{
+    margin: 0 auto; 
+}
+.page7{
+    height: 1100px;
+}
+ 
+}
+
+@media screen and (min-width:556px) and (max-width:768px){
+    .open{
+        flex-direction: column;
+        margin-bottom: 20rem;
+    }
+    
+    .left-1 span{
+        font-size: 25px;
+    }
+    .left-1 p{
+        font-size: 12px;
+        width: 80vw;
+    }
+    .view-menu{
+            border: none;
+            border-radius: 30px;
+            font-size: 15px;
+            padding: 5px 10px;  
+    }
+    .circle-page2{
+        width: 120px;
+        left: 300px;
+        top: 90px;
+    }
+    @keyframes circle0 {
+        0% {left: -250px}
+        100%{left:300px}
+    }
+    .focaccia{
+        width: 350px;
+        left: 120px;
+        top: 150px;
+    }
+    @keyframes focaccia0{
+        0%{top:-300px ;}
+        100%{top: 150px;}
+    
+    }
+    .breakfast{
+        width: 250px;
+        height: 350px;
+        top: 200px;
+        left:270px;
+
+    }
+    .breakfast p{
+        font-size: 15px;
+    }
+    @keyframes breakfast0{
+        0%{left: -400px;}
+        100%{left:270px ;}
+    }
+    .circle--3 {
+        width: 400px;
+        left: 100px;
+    }
+    .chef{
+        width: 350px;
+        left: 100px;
+    }
+    .img-food{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: auto;
+        justify-content: space-around;
+        top: 150px;
+              margin: 0;
+              margin-bottom: 10rem;
+              text-align: center;
+    }
+    .img-food img{
+        width: 400px;
+        height: 400px;
+       
+        margin: 0 auto;
+   margin-bottom: 3rem;
+    }
+    .page3{
+        height: 900px;
+    }
+    .menu{
+        height: auto;
+        
+        grid-template-columns: auto auto;
+    }
+    .menu0{
+        margin: 0 auto;
+    }
+    
+    .insalata{
+        width: 400px;
+        top: 120px;
+        left: 150px;
+    }
+    .delivery{
+        width: 350px;
+        height: 500px;
+        padding: 20px;
+left: 50px;        top: 300px;
+      
+    }
+    .rectangle{
+        width: 400px;
+        height: 400px;
+        left: 60px;
+        top: 150px;
+    }
+  
+    .page4{
+        
+        height: 700px;
+        margin: 2rem 0;
+        height: 200px;
+       }
+       .must--text, .fast--text,.page4 .menu--page4{
+           position: absolute;
+           top: 0;
+       }
+       .must--text{
+           top: 50px;
+           font-size: 12px;
+       }
+       .fast--text{
+           top: 60px;
+           font-size: 42px;
+       }
+       .page4 .menu--page4{
+        top: 140px;
+        font-size:20px ;
+    }
+    .page7{
+        margin-top: 1rem;
+        height: 1000px;
+        text-align: center;
+    }
+}
